@@ -28,8 +28,12 @@
             <%--Audi<form:radiobutton path="carBrand" value="Audi"/>--%>
             <%--Hammer<form:radiobutton path="carBrand" value="Hammer"/>--%>
             <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
-
         </p>
+        <p>Foreign Language(s)</p>
+        <%--EN <form:checkbox path="languages" value="English"/>--%>
+        <%--DE <form:checkbox path="languages" value="Deutsch"/>--%>
+        <%--FR <form:checkbox path="languages" value="French"/>--%>
+        <form:checkboxes path="languages" items="${employee.languagesList}"/>
 
         <input type="submit" value="OK">
     </form:form>

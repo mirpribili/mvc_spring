@@ -45,6 +45,7 @@
     - дает доступ к конкретному атрибуту Модели
 # Forms: DropDown list in form Spring MVC __commit
 # Forms: radiobuttons __commit
+# Forms: checkbox__commit
 
 #
 #
