@@ -2,6 +2,7 @@ package com.mvc_spring.mwa;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -15,11 +16,23 @@ public class MyController {
     public String showFirstView(){
         return "first-view";
     }
+
     @RequestMapping("/askDetails")
     public String askEmployeeDetails(){
 
         return "ask-emp-details-view";
     }
+
+    @RequestMapping("/askDetails2")
+    public String askEmployeeDetails2(Model model){
+        Employee emp = new Employee();
+        emp.setName("Default name: Ivan");
+        emp.setSurname("Default surname: Petrov");
+        emp.setSalary(499);
+        model.addAttribute("employee", emp);
+        return "ask-emp-details-view2";
+    }
+
 //    @RequestMapping("showDetails")
 //    public String showEmpDetails(){
 //
@@ -47,6 +60,15 @@ public class MyController {
         model.addAttribute("nameAttribute", empName);
 
         return "show-emp-details-view";
+    }
+
+    @RequestMapping("/showDetails2")
+    public String showEmpDetails2(@ModelAttribute("employee_attribute") Employee employee)
+    {
+        String name = employee.getName();
+        employee.setName("Dr. " + name);
+        employee.setSalary(employee.getSalary()*10);
+        return "show-emp-details-view2";
     }
 
 }

@@ -30,12 +30,27 @@
 - В Controller можно добавлять данные
 - передали через атрибут
 # @RequestParam__commit
-- При работе с формами, связывет поле формы с парам. метода Controller
+- При работе с формами, связывает поле формы с парам. метода Controller
 # @RequestMapping__&__Ambiguous mapping__commit
 - не только для методов, но и для самого класса Controller
 - связывает указанный для класса url со всеми его методами
 ## Ambiguous mapping (двусмысленный)
 -  двух разных контроллерах один и тот же @RequestMapping приведет к ошибке 
+# View->Model->View__commit
+- model.addAttribute("employee", new Employee());
+- Во view обратились к значению по имени атрибута и его полю
+  - ${employee_attribute.salary}
+- при работе с формами, 
+  - аннотация @ModelAttribute в параметре метода Controller-а
+    - дает доступ к конкретному атрибуту Модели
+#
+#
+#
+#
+#
+#
+#
+#
 #
 #
 #

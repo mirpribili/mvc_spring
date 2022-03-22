@@ -5,6 +5,7 @@
 <br>
 <br>
 <br>
-<a href="askDetails">Please write your details</a>
+<p><a href="askDetails">Please write your details</a></p>
+<p><a href="askDetails2">Please write your details ver 2</a></p>
 </body>
 </html>
