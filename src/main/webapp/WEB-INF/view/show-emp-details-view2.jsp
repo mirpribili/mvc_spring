@@ -11,5 +11,6 @@
     <b>Your surname: ${employee_attribute.surname}</b>
     <br>
     <b>Your salary: ${employee_attribute.salary}</b>
+    <p>Your department: ${employee_attribute.department}</p>
 </body>
 </html>

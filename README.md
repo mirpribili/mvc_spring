@@ -43,7 +43,8 @@
 - при работе с формами, 
   - аннотация @ModelAttribute в параметре метода Controller-а
     - дает доступ к конкретному атрибуту Модели
-#
+# DropDown list in form Spring MVC __commit
+    - 
 #
 #
 #
