@@ -2,6 +2,8 @@ package com.mvc_spring.mwa;
 
 //import jakarta.validation.constraints.Size;
 
+import com.mvc_spring.mwa.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +26,8 @@ public class Employee {
     private Map<String, String> languagesList;
     @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use pattern XXX-XX-XX")
     private String phoneNumber;
+    @CheckEmail(value = "abc.com", message = "email must ends with abc.com")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
@@ -40,6 +44,14 @@ public class Employee {
         languagesList.put("English", "EN");
         languagesList.put("Deutsch", "DE");
         languagesList.put("France", "FR");
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPhoneNumber() {

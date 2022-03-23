@@ -18,8 +18,12 @@
         <br>
         Phone number:<form:input path="phoneNumber"/>
                 <form:errors path="phoneNumber"/>
-                <br>
-                <br>
+        <br>
+        <br>
+        Email:<form:input path="email"/>
+               <form:errors path="email"/>
+        <br>
+        <br>
         Department:<form:select path="department">
                     <%--HARD CODE--%>
                     <%--<form:option value="Information Technology" label="IT"/>--%>

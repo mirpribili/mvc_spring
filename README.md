@@ -50,7 +50,7 @@
 - Java Standard Bean Validation API - это **спецификация**, которая описывает правила валидации.
 - Hibernate Validator - реализация правил, описанных в Java Standard Bean Validation API
 # Forms: Validations: @Min, @Max, @Pattern __commit
-
+# Forms: Create my validations __commit
 #
 #
 #
