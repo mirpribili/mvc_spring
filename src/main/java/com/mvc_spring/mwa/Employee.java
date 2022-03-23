@@ -1,10 +1,20 @@
 package com.mvc_spring.mwa;
 
+//import jakarta.validation.constraints.Size;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
+    @Size(min=2, message = "Name must be min 2 symbol's")
     private String name;
+//    @NotNull(message = "surname is required field") // not work with String = ""
+    @NotEmpty(message = "surname is required field") // work with String = ""
+    @NotBlank(message = "surname is required field") // work with String="    "
     private String surname;
     private int salary;
     private String department;

@@ -7,16 +7,16 @@
 <br>
 <br>
 <br>
-    <b>Your name: ${employee_attribute.name}</b>
+    <b>Your name: ${employee.name}</b>
     <br>
-    <b>Your surname: ${employee_attribute.surname}</b>
+    <b>Your surname: ${employee.surname}</b>
     <br>
-    <b>Your salary: ${employee_attribute.salary}</b>
-    <p>Your department: ${employee_attribute.department}</p>
-    <p>Your car brand: ${employee_attribute.carBrand}</p>
+    <b>Your salary: ${employee.salary}</b>
+    <p>Your department: ${employee.department}</p>
+    <p>Your car brand: ${employee.carBrand}</p>
     <p>Language(s):
         <ul>
-        <c:forEach var="lang" items="${employee_attribute.languages}">
+        <c:forEach var="lang" items="${employee.languages}">
             <li>${lang}</li>
         </c:forEach>
         </ul>

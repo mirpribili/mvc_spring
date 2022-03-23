@@ -5,9 +5,11 @@
     <h2>Dear Employee, Please enter your details</h2>
     <form:form action="showDetails2" modelAttribute="employee">
         Name:<form:input path="name"/>
+        <form:errors path="name"/>
         <br>
         <br>
         Surname:<form:input path="surname"/>
+        <form:errors path="surname"/>
         <br>
         <br>
         Salary:<form:input path="salary"/>

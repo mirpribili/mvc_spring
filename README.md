@@ -46,6 +46,10 @@
 # Forms: DropDown list in form Spring MVC __commit
 # Forms: radiobuttons __commit
 # Forms: checkbox__commit
+# Forms: Validations: @Size, @NotEmpty, @NotBlank __commit
+- Java Standard Bean Validation API - это **спецификация**, которая описывает правила валидации.
+- Hibernate Validator - реализация правил, описанных в Java Standard Bean Validation API
+
 
 #
 #
