@@ -2,10 +2,7 @@ package com.mvc_spring.mwa;
 
 //import jakarta.validation.constraints.Size;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,6 +13,8 @@ public class Employee {
     @NotEmpty(message = "surname is required field") // work with String = ""
     @NotBlank(message = "surname is required field") // work with String="    "
     private String surname;
+    @Min(value = 500, message = "must be greater than 499")
+    @Max(value = 1000, message = "must be less than 1001")
     private int salary;
     private String department;
     private Map<String, String> departments;
@@ -23,6 +22,8 @@ public class Employee {
     private Map<String, String> carBrands;
     private String[] languages;
     private Map<String, String> languagesList;
+    @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use pattern XXX-XX-XX")
+    private String phoneNumber;
 
     public Employee() {
         departments = new HashMap<>();
@@ -39,6 +40,14 @@ public class Employee {
         languagesList.put("English", "EN");
         languagesList.put("Deutsch", "DE");
         languagesList.put("France", "FR");
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public Map<String, String> getLanguagesList() {

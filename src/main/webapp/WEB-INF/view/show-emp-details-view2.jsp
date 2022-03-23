@@ -21,5 +21,6 @@
         </c:forEach>
         </ul>
     </p>
+    <p>Your phone number: ${employee.phoneNumber}</p>
 </body>
 </html>

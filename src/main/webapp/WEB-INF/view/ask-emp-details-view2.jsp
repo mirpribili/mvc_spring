@@ -13,8 +13,13 @@
         <br>
         <br>
         Salary:<form:input path="salary"/>
+        <form:errors path="salary"/>
         <br>
         <br>
+        Phone number:<form:input path="phoneNumber"/>
+                <form:errors path="phoneNumber"/>
+                <br>
+                <br>
         Department:<form:select path="department">
                     <%--HARD CODE--%>
                     <%--<form:option value="Information Technology" label="IT"/>--%>
